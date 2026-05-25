@@ -23,8 +23,8 @@ const corsOptions = {
     const productionUrl = process.env.FRONTEND_URL || "http://localhost:5173";
     if (origin === productionUrl) return callback(null, true);
     
-    // Allow Vercel preview deployments (any URL with your project pattern)
-    if (origin.match(/^https:\/\/talk-a-tive-[a-z0-9-]+-srijans-projects-[a-z0-9]+\.vercel\.app$/)) {
+    // Allow Vercel deployments (including previews and production)
+    if (origin.endsWith('.vercel.app')) {
       return callback(null, true);
     }
     
