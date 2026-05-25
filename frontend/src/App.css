@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.App {
+  height: 100vh; /* Ensures it covers the full screen */
+  width: 100vw;
+  background: url("./chat-app_home.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers content vertically */
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
