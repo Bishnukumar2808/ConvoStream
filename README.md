@@ -56,18 +56,18 @@ frontend/
 ### Backend (`/backend/.env`)
 
 PORT=5000
-MONGO_URI=mongodb+srv://srijanswapnil:srijanswapnil@cluster0.kd25r.mongodb.net/chat-app?retryWrites=true&w=majority&appName=Cluster0
-JWT_SECRET=hello
-NODE_ENV=production
-FRONTEND_URL=https://localhost:5173
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/chat-app?retryWrites=true&w=majority
+JWT_SECRET=your_jwt_secret
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
 
-##Frontend (/frontend/.env)
+## Frontend (/frontend/.env)
 VITE_API_BASE_URL=http://localhost:5000
 
 ⚙️ Installation
 1. Clone the repository
-git clone https://github.com/srijanswapnil/chat-app.git
-cd chat-app
+git clone https://github.com/bishnukumar2808/ConvoStream.git
+cd ConvoStream
 
 2. Install dependencies
 Backend
